@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "arknight-mod",
+	"version": "${version}",
+	"name": "Arknight Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"阿鹤"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/arknight-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.arknight.tutorial.ArknightMod"
+		],
+		"fabric-datagen": [
+			"com.arknight.tutorial.ArknightModDataGenerator"
+		],
+      "client": [
+        "com.arknight.tutorial.ArknightModClient"
+      ]
+	},
+	"mixins": [
+		"arknight-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
