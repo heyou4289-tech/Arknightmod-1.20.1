@@ -1,5 +1,7 @@
 package com.arknight.tutorial;
 
+import com.arknight.tutorial.item.ModItemGroups;
+import com.arknight.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,7 +20,8 @@ public class ArknightMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
+        ModItems.registerItems();
+        ModItemGroups.registerGroups();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
