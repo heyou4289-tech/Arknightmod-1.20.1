@@ -20,16 +20,6 @@ public class ModItemGroups {
         return RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(ArknightMod.MOD_ID, id));
     }
 
-    public static final ItemGroup ARKNIGHT_GROUP2 = Registry.register(
-            Registries.ITEM_GROUP,
-            new Identifier(ArknightMod.MOD_ID, "arknight_group2"),
-            ItemGroup.create(null,-1)
-                    .displayName(Text.translatable("itemGroup.arknight_group2"))
-                    .icon(() -> new ItemStack(ModItems.CARDBOARD))
-                    .entries((displayContext, entries) ->{
-                        entries.add(ModItems.CARDBOARD);
-                        //entries.add(Items.DIAMOND);
-                    }).build());
 
     public static void registerGroups() {
         Registry.register(
@@ -48,4 +38,16 @@ public class ModItemGroups {
 
                         })).build());
     }
+
+    public static final ItemGroup ARKNIGHT_GROUP2 = Registry.register(
+            Registries.ITEM_GROUP,
+            new Identifier(ArknightMod.MOD_ID, "arknight_group2"),
+            ItemGroup.create(null,-1)
+                    .displayName(Text.translatable("itemGroup.arknight_group2"))
+                    .icon(() -> new ItemStack(ModItems.CARDBOARD))
+                    .entries((displayContext, entries) ->{
+                        entries.add(ModItems.CARDBOARD);
+                        //entries.add(Items.DIAMOND);
+                    }).build());
+
 }

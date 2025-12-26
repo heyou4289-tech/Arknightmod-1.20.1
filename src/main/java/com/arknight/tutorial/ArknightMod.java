@@ -1,5 +1,6 @@
 package com.arknight.tutorial;
 
+import com.arknight.tutorial.block.ModBlocks;
 import com.arknight.tutorial.item.ModItemGroups;
 import com.arknight.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -21,6 +22,7 @@ public class ArknightMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
         ModItems.registerItems();
+        ModBlocks.registerModBlocks();
         ModItemGroups.registerGroups();
 		LOGGER.info("Hello Fabric world!");
 	}

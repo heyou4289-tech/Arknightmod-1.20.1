@@ -11,8 +11,17 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block ORIGINIUM_BLOCK = register("originium_block", new Block(AbstractBlock.Settings.create().strength(20.0f,600.0f)));
-    public static final Block RAW_ORIGINIUM_BLOCK = register("raw_originium_block", new Block(AbstractBlock.Settings.create().requiresTool().strength(4.0f,6.0f)));
+    public static final Block ORIGINIUM_BLOCK = register("originium_block", new Block(AbstractBlock.Settings.create()
+                                                            .requiresTool()
+                                                            .strength(20.0f,600.0f)
+                                                            .luminance(state -> 7)
+                                                            .nonOpaque()));
+    public static final Block RAW_ORIGINIUM_BLOCK = register("raw_originium_block", new Block(AbstractBlock.Settings.create()
+                                                            .strength(3.0f,3.0f)
+                                                            .requiresTool()
+                                                            .luminance(state -> 4)
+                                                            .nonOpaque()));
+
 
     public static Block register(String id, Block block) {
         registerBlockItems(id, block);

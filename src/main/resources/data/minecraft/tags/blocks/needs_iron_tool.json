@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "arknight-mod:originium_block",
     "arknight-mod:raw_originium_block"
   ]
 }
