@@ -17,10 +17,15 @@ public class ModBlocks {
                                                             .luminance(state -> 7)
                                                             .nonOpaque()));
     public static final Block RAW_ORIGINIUM_BLOCK = register("raw_originium_block", new Block(AbstractBlock.Settings.create()
-                                                            .strength(3.0f,3.0f)
+                                                            .strength(4.0f,3.0f)
                                                             .requiresTool()
-                                                            .luminance(state -> 4)
-                                                            .nonOpaque()));
+                                                            .luminance(state -> 4)));
+    public static final Block DEEPSLATE_RAW_ORIGINIUM_ORE = register("deepslate_raw_originium_ore", new Block(AbstractBlock.Settings.create()
+                                                                    .strength(4.5f,3.0f)
+                                                                    .requiresTool()
+                                                                    .luminance(state -> 4)));
+
+
 
 
     public static Block register(String id, Block block) {

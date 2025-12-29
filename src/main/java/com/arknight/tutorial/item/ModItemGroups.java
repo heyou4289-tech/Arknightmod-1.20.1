@@ -34,6 +34,7 @@ public class ModItemGroups {
                             entries.add(ModBlocks.ORIGINIUM_BLOCK);
                             entries.add(ModItems.RAW_ORIGINIUM);
                             entries.add(ModBlocks.RAW_ORIGINIUM_BLOCK);
+                            entries.add(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE);
                             entries.add(ModItems.LUNGMEN_DOLLAR);
 
                         })).build());
