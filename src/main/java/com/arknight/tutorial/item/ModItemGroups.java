@@ -36,6 +36,11 @@ public class ModItemGroups {
                             entries.add(ModBlocks.RAW_ORIGINIUM_BLOCK);
                             entries.add(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE);
                             entries.add(ModItems.LUNGMEN_DOLLAR);
+                            entries.add(ModItems.ORUNDUM);
+                            entries.add(ModItems.STRAWBERRY);
+                            entries.add(ModItems.CORN);
+                            entries.add(ModItems.CHEESE);
+                            entries.add(ModItems.ANTHRACITE);
 
                         })).build());
     }

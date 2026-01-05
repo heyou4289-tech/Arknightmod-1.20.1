@@ -17,6 +17,13 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.RAW_ORIGINIUM, "源石碎片");
         translationBuilder.add(ModItems.ORIGINIUM_ORE, "源石锭");
         translationBuilder.add(ModItems.LUNGMEN_DOLLAR, "龙门币");
+        translationBuilder.add(ModItems.ORUNDUM,"合成玉");
+
+        translationBuilder.add(ModItems.CORN, "玉米");
+        translationBuilder.add(ModItems.STRAWBERRY, "草莓");
+        translationBuilder.add(ModItems.CHEESE, "芝士");
+
+        translationBuilder.add(ModItems.ANTHRACITE, "无烟煤");
 
         translationBuilder.add(ModBlocks.ORIGINIUM_BLOCK, "至纯源石块");
         translationBuilder.add(ModBlocks.RAW_ORIGINIUM_BLOCK, "源石矿");

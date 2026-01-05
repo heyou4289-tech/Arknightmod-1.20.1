@@ -18,6 +18,13 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.RAW_ORIGINIUM, "Originium Shard");
         translationBuilder.add(ModItems.ORIGINIUM_ORE, "Originium Ore");
         translationBuilder.add(ModItems.LUNGMEN_DOLLAR, "Lungmen Dollar");
+        translationBuilder.add(ModItems.ORUNDUM, "Orundum");
+
+        translationBuilder.add(ModItems.ANTHRACITE, "Anthracite");
+
+        translationBuilder.add(ModItems.CORN, "corn");
+        translationBuilder.add(ModItems.STRAWBERRY, "strawberry");
+        translationBuilder.add(ModItems.CHEESE, "cheese");
 
         translationBuilder.add(ModBlocks.ORIGINIUM_BLOCK, "Pure Originium Block");
         translationBuilder.add(ModBlocks.RAW_ORIGINIUM_BLOCK, "Raw Originium Ore");

@@ -27,5 +27,10 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LUNGMEN_DOLLAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORIGINIUM_ORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CARDBOARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHEESE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANTHRACITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORUNDUM, Models.GENERATED);
     }
 }

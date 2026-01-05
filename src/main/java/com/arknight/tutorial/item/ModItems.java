@@ -17,7 +17,15 @@ public class ModItems {
     public static final Item RAW_ORIGINIUM = registerItem("raw_originium", new Item(new Item.Settings()));  //源石碎片
     public static final Item CARDBOARD = registerItem("material/cardboard", new Item(new Item.Settings())); //纸板
     public static final Item ORIGINIUM_ORE = registerItem("originium_ore", new Item(new Item.Settings()));  //源石锭
-    public static final Item LUNGMEN_DOLLAR = registerItem("lungmen_dollar", new Item(new Item.Settings()));
+    public static final Item LUNGMEN_DOLLAR = registerItem("lungmen_dollar", new Item(new Item.Settings()));//龙门币
+    public static final Item ORUNDUM = registerItem("orundum", new Item(new Item.Settings()));              //合成玉
+
+    public static final Item CORN = registerItems("corn", new Item(new Item.Settings().food(ModFoodComponents.CORN)));
+    public static final Item STRAWBERRY = registerItems("strawberry", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY)));
+    public static final Item CHEESE = registerItems("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
+
+    public static final Item ANTHRACITE = registerItems("anthracite", new Item(new Item.Settings()));
+
 
 
     public static Item registerItems(String id, Item item) {
