@@ -18,15 +18,25 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ORIGINIUM_BLOCK)
                 .add(ModBlocks.RAW_ORIGINIUM_BLOCK)
-                .add(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE);
+                .add(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE)
+                .add(ModBlocks.ICE_ETHER_ORE)
+                .add(ModBlocks.RAW_ICE_ETHER_BLOCK)
+                .add(ModBlocks.ICE_ETHER_BLOCK)
+                .add(ModBlocks.SALT_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ORIGINIUM_BLOCK)
                 .add(ModBlocks.RAW_ORIGINIUM_BLOCK)
-                .add(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE);
+                .add(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE)
+                .add(ModBlocks.ICE_ETHER_ORE)
+                .add(ModBlocks.RAW_ICE_ETHER_BLOCK)
+                .add(ModBlocks.ICE_ETHER_BLOCK);
 
         getOrCreateTagBuilder(ModBlockTags.ORIGINIUM_ORES)
                 .add(ModBlocks.RAW_ORIGINIUM_BLOCK)
-                .add(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE);
+                .add(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE)
+                .add(ModBlocks.ICE_ETHER_ORE);
+
+
     }
 }

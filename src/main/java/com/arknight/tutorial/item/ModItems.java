@@ -1,6 +1,7 @@
 package com.arknight.tutorial.item;
 
 import com.arknight.tutorial.ArknightMod;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.BlockItem;
@@ -13,6 +14,11 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
+    //教程跟进
+    public static final Item ICE_ETHER = registerItem("ice_ether", new Item(new Item.Settings()));
+    public static final Item RAW_ICE_ETHER = registerItem("raw_ice_ether", new Item(new Item.Settings()));
+
+    //材料 及 货币
     public static final Item ORIGINIUM = registerItem("originium", new Item(new Item.Settings()));          //源石
     public static final Item RAW_ORIGINIUM = registerItem("raw_originium", new Item(new Item.Settings()));  //源石碎片
     public static final Item CARDBOARD = registerItem("material/cardboard", new Item(new Item.Settings())); //纸板
@@ -20,10 +26,35 @@ public class ModItems {
     public static final Item LUNGMEN_DOLLAR = registerItem("lungmen_dollar", new Item(new Item.Settings()));//龙门币
     public static final Item ORUNDUM = registerItem("orundum", new Item(new Item.Settings()));              //合成玉
 
+    //测试食物
     public static final Item CORN = registerItems("corn", new Item(new Item.Settings().food(ModFoodComponents.CORN)));
     public static final Item STRAWBERRY = registerItems("strawberry", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY)));
     public static final Item CHEESE = registerItems("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
 
+    //自制食物
+    public static final Item A_BAG_OF_SUGAR = registerItems("a_bag_of_sugar", new Item(new Item.Settings().food(ModFoodComponents.A_BAG_OF_SUGAR)));
+    public static final Item SUGAR_GROUP = registerItems("sugar_group", new Item(new Item.Settings().food(ModFoodComponents.SUGAR_GROUP)));
+    public static final Item SUGAR_CUBE = registerItems("sugar_cube", new Item(new Item.Settings().food(ModFoodComponents.SUGAR_CUBE)));
+    public static final Item SALTED_EGG_YOLK = registerItems("salted_egg_yolk", new Item(new Item.Settings().food(ModFoodComponents.SALTED_EGG_YOLK)));
+
+    public static final Item FLOUR = registerItem("flour", new Item(new Item.Settings()));
+    public static final Item DOUGH = registerItem("dough", new Item(new Item.Settings()));
+    public static final Item DOUGH_WRAPPER = registerItem("dough_wrapper", new Item(new Item.Settings()));
+    public static final Item UNFORMED_ZANGJINBO = registerItem("unformed_zangjinbo", new Item(new Item.Settings()));
+    public static final Item MEAT_FLOSS = registerItems("meat_floss", new Item(new Item.Settings().food(ModFoodComponents.MEAT_FLOSS)));
+
+    public static final Item ZANG_JIN_BO = registerItems("zang_jin_bo", new Item(new Item.Settings()));
+    public static final Item COOKED_ZANG_JIN_BO = registerItems("cooked_zang_jin_bo", new Item(new Item.Settings().food(ModFoodComponents.ZANG_JIN_BO)));
+    public static final Item QING_QIU_YU = registerItems("qing_qiu_yu", new Item(new Item.Settings()));
+
+    //调料
+    public static final Item SALT = registerItem("salt", new Item(new Item.Settings()));
+
+    //工具
+    public static final Item MOONCAKE_MOLD = registerItem("mooncake_mold", new Item(new Item.Settings().maxCount(1)));
+    public static final Item ROLLING_PIN = registerItem("rolling_pin", new Item(new Item.Settings()));
+
+    //燃料
     public static final Item ANTHRACITE = registerItems("anthracite", new Item(new Item.Settings()));
 
 

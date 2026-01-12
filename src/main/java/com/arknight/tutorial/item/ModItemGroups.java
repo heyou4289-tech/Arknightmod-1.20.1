@@ -27,20 +27,24 @@ public class ModItemGroups {
                 ARKNIGHT_GROUP,
                 ItemGroup.create(ItemGroup.Row.TOP, 7)
                         .displayName(Text.translatable("arknight_group"))
-                        .icon(() -> new ItemStack(ModItems.ORIGINIUM))
+                        .icon(() -> new ItemStack(ModItems.CORN))
                         .entries(((displayContext, entries) -> {
-                            entries.add(ModItems.ORIGINIUM);
-                            entries.add(ModItems.ORIGINIUM_ORE);
-                            entries.add(ModBlocks.ORIGINIUM_BLOCK);
-                            entries.add(ModItems.RAW_ORIGINIUM);
-                            entries.add(ModBlocks.RAW_ORIGINIUM_BLOCK);
-                            entries.add(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE);
-                            entries.add(ModItems.LUNGMEN_DOLLAR);
-                            entries.add(ModItems.ORUNDUM);
-                            entries.add(ModItems.STRAWBERRY);
                             entries.add(ModItems.CORN);
                             entries.add(ModItems.CHEESE);
-                            entries.add(ModItems.ANTHRACITE);
+                            entries.add(ModItems.STRAWBERRY);
+                            //自制食物
+                            entries.add(ModItems.SALT);
+                            entries.add(ModItems.SALTED_EGG_YOLK);
+                            entries.add(ModItems.FLOUR);
+                            entries.add(ModItems.DOUGH);
+                            entries.add(ModItems.DOUGH_WRAPPER);
+                            entries.add(ModItems.UNFORMED_ZANGJINBO);
+                            entries.add(ModItems.ZANG_JIN_BO);
+                            entries.add(ModItems.COOKED_ZANG_JIN_BO);
+
+                            entries.add(ModItems.A_BAG_OF_SUGAR);
+                            entries.add(ModItems.SUGAR_GROUP);
+                            entries.add(ModItems.SUGAR_CUBE);
 
                         })).build());
     }
@@ -52,8 +56,27 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemGroup.arknight_group2"))
                     .icon(() -> new ItemStack(ModItems.CARDBOARD))
                     .entries((displayContext, entries) ->{
+                        entries.add(ModItems.ANTHRACITE);
                         entries.add(ModItems.CARDBOARD);
+                        entries.add(ModBlocks.ICE_ETHER_ORE);
+                        entries.add(ModItems.ICE_ETHER);
+                        entries.add(ModBlocks.ICE_ETHER_BLOCK);
+                        entries.add(ModItems.RAW_ICE_ETHER);
+                        entries.add(ModBlocks.RAW_ICE_ETHER_BLOCK);
+                        entries.add(ModItems.ORIGINIUM);
+                        entries.add(ModBlocks.ORIGINIUM_BLOCK);
+                        entries.add(ModItems.RAW_ORIGINIUM);
+                        entries.add(ModBlocks.RAW_ORIGINIUM_BLOCK);
+                        entries.add(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE);
+                        entries.add(ModItems.ORUNDUM);
+                        entries.add(ModItems.LUNGMEN_DOLLAR);
+                        entries.add(ModItems.ORIGINIUM_ORE);
+                        entries.add(ModBlocks.SALT_ORE);
+                        entries.add(ModItems.MOONCAKE_MOLD);
+                        entries.add(ModItems.ROLLING_PIN);
                         //entries.add(Items.DIAMOND);
                     }).build());
+
+
 
 }

@@ -23,11 +23,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.ORIGINIUM_BLOCK);
+        addDrop(ModBlocks.ICE_ETHER_BLOCK);
+        addDrop(ModBlocks.RAW_ICE_ETHER_BLOCK);
 
 //        addDrop(ModBlocks.RAW_ORIGINIUM_BLOCK, oreDrops(ModBlocks.RAW_ORIGINIUM_BLOCK, ModItems.RAW_ORIGINIUM));
 //        addDrop(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE, oreDrops(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE, ModItems.RAW_ORIGINIUM));
         addDrop(ModBlocks.RAW_ORIGINIUM_BLOCK, likeCopperOreDrops(ModBlocks.RAW_ORIGINIUM_BLOCK, ModItems.RAW_ORIGINIUM, 1.0f,3.0f));
         addDrop(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE, likeCopperOreDrops(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE, ModItems.RAW_ORIGINIUM, 1.0f,3.0f));
+        addDrop(ModBlocks.ICE_ETHER_ORE, likeCopperOreDrops(ModBlocks.ICE_ETHER_ORE, ModItems.RAW_ICE_ETHER, 2.0f, 4.0f));
+        addDrop(ModBlocks.SALT_ORE, likeCopperOreDrops(ModBlocks.SALT_ORE, ModItems.SALT, 3.0f, 7.0f));
 
     }
 
