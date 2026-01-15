@@ -48,7 +48,19 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.ZANG_JIN_BO, "uncooked_zang jin bo");
         translationBuilder.add(ModItems.COOKED_ZANG_JIN_BO, "zang jin bo");
 
+        translationBuilder.add(ModItems.UNFORMED_QING_QIU_YU, "unformed qing qiu yu");
+        translationBuilder.add(ModItems.QING_QIU_YU, "qing qiu yu");
+
         translationBuilder.add(ModItems.MEAT_FLOSS, "meat floss");
+        translationBuilder.add(ModItems.UNCOOKED_GLUTINOUS_RICE_DOUGH, "uncooked glutinous rice dough");
+        translationBuilder.add(ModItems.COOKED_GLUTINOUS_RICE_DOUGH, "cooked_glutinous_rice_dough");
+        translationBuilder.add(ModItems.GLUTINOUS_RICE_DOUGH_WRAPPER, "glutinous rice dough wrapper");
+        translationBuilder.add(ModItems.UNFORMED_LIANG_XIAO_QING, "unformed liang xiao qing");
+        translationBuilder.add(ModItems.LIANG_XIAO_QING, "liang xiao qing");
+
+        //crop
+        translationBuilder.add(ModItems.GLUTINOUS_RICE, "glutinous rice");
+        translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "Strawberry seed");
 
         translationBuilder.add(ModBlocks.ORIGINIUM_BLOCK, "Pure Originium Block");
         translationBuilder.add(ModBlocks.RAW_ORIGINIUM_BLOCK, "Raw Originium Ore");
@@ -61,6 +73,11 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         //seasoning
         translationBuilder.add(ModBlocks.SALT_ORE, "salt ore");
         translationBuilder.add(ModItems.SALT, "salt");
+
+        translationBuilder.add(ModItems.STARCH, "starch");
+        translationBuilder.add(ModItems.STARCH_DOUGH, "starch dough");
+        translationBuilder.add(ModItems.COOKED_STARCH_DOUGH, "cooked starch dough");
+        translationBuilder.add(ModItems.STARCH_DOUGH_WRAPPER, "starch dough wrapper");
 
         translationBuilder.add(ModItemGroups.ARKNIGHT_GROUP, "Arknight Group");
         translationBuilder.add("arknight_group2", "Arknight Group2");

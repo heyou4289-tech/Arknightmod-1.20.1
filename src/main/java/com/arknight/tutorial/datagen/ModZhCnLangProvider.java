@@ -47,6 +47,15 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.COOKED_ZANG_JIN_BO, "藏金波");
 
         translationBuilder.add(ModItems.MEAT_FLOSS, "肉松");
+        translationBuilder.add(ModItems.UNCOOKED_GLUTINOUS_RICE_DOUGH, "未煮熟的糯米面团");//冰皮月饼制作
+        translationBuilder.add(ModItems.COOKED_GLUTINOUS_RICE_DOUGH, "煮熟的糯米面团");
+        translationBuilder.add(ModItems.GLUTINOUS_RICE_DOUGH_WRAPPER, "糯米面皮");
+        translationBuilder.add(ModItems.UNFORMED_LIANG_XIAO_QING, "未塑形的良宵晴");
+        translationBuilder.add(ModItems.LIANG_XIAO_QING,"良宵晴");
+
+        //作物
+        translationBuilder.add(ModItems.GLUTINOUS_RICE, "糯米");
+        translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "草莓种子");
 
         translationBuilder.add(ModItems.ANTHRACITE, "无烟煤");
 
@@ -61,6 +70,13 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         //调料
         translationBuilder.add(ModBlocks.SALT_ORE, "盐矿");
         translationBuilder.add(ModItems.SALT, "盐");
+
+        translationBuilder.add(ModItems.STARCH, "淀粉");
+        translationBuilder.add(ModItems.STARCH_DOUGH, "水晶面团");
+        translationBuilder.add(ModItems.COOKED_STARCH_DOUGH, "熟的水晶面团");
+        translationBuilder.add(ModItems.STARCH_DOUGH_WRAPPER, "水晶面皮");
+        translationBuilder.add(ModItems.UNFORMED_QING_QIU_YU, "未塑形的清秋玉");
+        translationBuilder.add(ModItems.QING_QIU_YU, "清秋玉");
 
         translationBuilder.add(ModItemGroups.ARKNIGHT_GROUP, "Arknight Group");
         translationBuilder.add("arknight_group2", "Arknight Group2");

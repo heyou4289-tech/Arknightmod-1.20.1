@@ -153,7 +153,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
         offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING,
-                100, ModItems.ZANG_JIN_BO, ModItems.COOKED_ZANG_JIN_BO, 0.4f);
+                100, ModItems.ZANG_JIN_BO, ModItems.COOKED_ZANG_JIN_BO, 0.8f);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MEAT_FLOSS, 5)
                 .input(ModItems.SALT)
@@ -161,6 +161,73 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion("has_meat", conditionsFromItem(Items.COOKED_BEEF))
                 .offerTo(exporter);
 
+        //糯米面————冰皮
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.UNCOOKED_GLUTINOUS_RICE_DOUGH, 2)
+                .input(ModItems.GLUTINOUS_RICE)
+                .input(ModItems.GLUTINOUS_RICE)
+                .input(Items.MILK_BUCKET)
+                .input(Items.SUGAR)
+                .criterion("has_glutinous_rice", conditionsFromItem(ModItems.GLUTINOUS_RICE))
+                .offerTo(exporter);
+
+        offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING,
+                100, ModItems.UNCOOKED_GLUTINOUS_RICE_DOUGH, ModItems.COOKED_GLUTINOUS_RICE_DOUGH, 0.3f);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GLUTINOUS_RICE_DOUGH_WRAPPER, 4)
+                .input(ModItems.COOKED_GLUTINOUS_RICE_DOUGH)
+                .input(ModItems.ROLLING_PIN)
+                .criterion("has_rolling_pin", conditionsFromItem(ModItems.ROLLING_PIN))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.UNFORMED_LIANG_XIAO_QING, 1)
+                        .input(ModItems.GLUTINOUS_RICE_DOUGH_WRAPPER)
+                        .input(ModItems.MEAT_FLOSS)
+                        .input(ModItems.MEAT_FLOSS)
+                        .criterion("has_glutinous_rice", conditionsFromItem(ModItems.GLUTINOUS_RICE))
+                        .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.LIANG_XIAO_QING, 1)
+                        .input(ModItems.UNFORMED_LIANG_XIAO_QING)
+                        .input(ModItems.MOONCAKE_MOLD)
+                        .criterion("has_mooncake_mold", conditionsFromItem(ModItems.MOONCAKE_MOLD))
+                        .offerTo(exporter);
+
+        //淀粉————水晶皮
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STARCH, 5)
+                .input(ModItems.CORN)
+                .criterion("has_corn", conditionsFromItem(ModItems.CORN))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STARCH_DOUGH, 2)
+                .input(ModItems.STARCH)
+                .input(ModItems.STARCH)
+                .input(Items.WATER_BUCKET)
+                .criterion("has_starch", conditionsFromItem(ModItems.STARCH))
+                .offerTo(exporter);
+
+        offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING,
+                100, ModItems.STARCH_DOUGH, ModItems.COOKED_STARCH_DOUGH, 0.3f);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STARCH_DOUGH_WRAPPER, 4)
+                .input(ModItems.COOKED_STARCH_DOUGH)
+                .input(ModItems.ROLLING_PIN)
+                .criterion("has_rolling_pin", conditionsFromItem(ModItems.ROLLING_PIN))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.UNFORMED_QING_QIU_YU, 1)
+                .input(ModItems.STARCH_DOUGH_WRAPPER)
+                .input(Items.DRIED_KELP)
+                .input(Items.DRIED_KELP)
+                .input(ModItems.MEAT_FLOSS)
+                .input(ModItems.MEAT_FLOSS)
+                .criterion("has_kelp", conditionsFromItem(Items.KELP))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.QING_QIU_YU, 1)
+                .input(ModItems.UNFORMED_QING_QIU_YU)
+                .input(ModItems.MOONCAKE_MOLD)
+                .criterion("has_mooncake_mold", conditionsFromItem(ModItems.MOONCAKE_MOLD))
+                .offerTo(exporter);
 
     }
 

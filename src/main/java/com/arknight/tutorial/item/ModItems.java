@@ -1,9 +1,11 @@
 package com.arknight.tutorial.item;
 
 import com.arknight.tutorial.ArknightMod;
+import com.arknight.tutorial.block.ModBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -37,15 +39,32 @@ public class ModItems {
     public static final Item SUGAR_CUBE = registerItems("sugar_cube", new Item(new Item.Settings().food(ModFoodComponents.SUGAR_CUBE)));
     public static final Item SALTED_EGG_YOLK = registerItems("salted_egg_yolk", new Item(new Item.Settings().food(ModFoodComponents.SALTED_EGG_YOLK)));
 
-    public static final Item FLOUR = registerItem("flour", new Item(new Item.Settings()));
-    public static final Item DOUGH = registerItem("dough", new Item(new Item.Settings()));
-    public static final Item DOUGH_WRAPPER = registerItem("dough_wrapper", new Item(new Item.Settings()));
+    public static final Item FLOUR = registerItem("flour", new Item(new Item.Settings()));//
+    public static final Item DOUGH = registerItem("dough", new Item(new Item.Settings()));//
+    public static final Item DOUGH_WRAPPER = registerItem("dough_wrapper", new Item(new Item.Settings()));//
     public static final Item UNFORMED_ZANGJINBO = registerItem("unformed_zangjinbo", new Item(new Item.Settings()));
     public static final Item MEAT_FLOSS = registerItems("meat_floss", new Item(new Item.Settings().food(ModFoodComponents.MEAT_FLOSS)));
 
     public static final Item ZANG_JIN_BO = registerItems("zang_jin_bo", new Item(new Item.Settings()));
     public static final Item COOKED_ZANG_JIN_BO = registerItems("cooked_zang_jin_bo", new Item(new Item.Settings().food(ModFoodComponents.ZANG_JIN_BO)));
-    public static final Item QING_QIU_YU = registerItems("qing_qiu_yu", new Item(new Item.Settings()));
+
+    public static final Item UNFORMED_QING_QIU_YU = registerItem("unformed_qing_qiu_yu", new Item(new Item.Settings()));
+    public static final Item QING_QIU_YU = registerItems("qing_qiu_yu", new Item(new Item.Settings().food(ModFoodComponents.QING_QIU_YU)));
+
+    public static final Item UNCOOKED_GLUTINOUS_RICE_DOUGH = registerItem("uncooked_glutinous_rice_dough", new Item(new Item.Settings()));
+    public static final Item COOKED_GLUTINOUS_RICE_DOUGH = registerItems("cooked_glutinous_rice_dough", new Item(new Item.Settings().food(ModFoodComponents.COOKED_GLUTINOUS_RICE_DOUGH)));
+    public static final Item GLUTINOUS_RICE_DOUGH_WRAPPER = registerItems("glutinous_rice_dough_wrapper", new Item(new Item.Settings()));
+    public static final Item UNFORMED_LIANG_XIAO_QING = registerItem("unformed_liang_xiao_qing", new Item(new Item.Settings()));
+    public static final Item LIANG_XIAO_QING = registerItems("liang_xiao_qing", new Item(new Item.Settings().food(ModFoodComponents.LIANG_QING_YU)));
+
+    public static final Item STARCH = registerItem("starch", new Item(new Item.Settings()));//淀粉
+    public static final Item STARCH_DOUGH = registerItems("starch_dough", new Item(new Item.Settings()));
+    public static final Item COOKED_STARCH_DOUGH = registerItems("cooked_starch_dough", new Item(new Item.Settings()));
+    public static final Item STARCH_DOUGH_WRAPPER = registerItems("starch_dough_wrapper", new Item(new Item.Settings()));
+
+    //作物
+    public static final Item GLUTINOUS_RICE = registerItem("glutinous_rice", new AliasedBlockItem(ModBlocks.GLUTINOUS_RICE_CROP, new Item.Settings()));
+    public static final Item STRAWBERRY_SEEDS = registerItems("strawberry_seeds", new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP, new Item.Settings()));
 
     //调料
     public static final Item SALT = registerItem("salt", new Item(new Item.Settings()));

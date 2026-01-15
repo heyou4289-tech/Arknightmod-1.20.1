@@ -32,8 +32,24 @@ public class ModItemGroups {
                             entries.add(ModItems.CORN);
                             entries.add(ModItems.CHEESE);
                             entries.add(ModItems.STRAWBERRY);
+                            entries.add(ModItems.STRAWBERRY_SEEDS);
+                            //作物
+                            entries.add(ModItems.GLUTINOUS_RICE);
+
+                            entries.add(ModItems.UNCOOKED_GLUTINOUS_RICE_DOUGH);
+                            entries.add(ModItems.COOKED_GLUTINOUS_RICE_DOUGH);
+                            entries.add(ModItems.GLUTINOUS_RICE_DOUGH_WRAPPER);
+                            entries.add(ModItems.UNFORMED_LIANG_XIAO_QING);
+                            entries.add(ModItems.LIANG_XIAO_QING);
+
+                            entries.add(ModItems.STARCH);
+                            entries.add(ModItems.STARCH_DOUGH);
+                            entries.add(ModItems.COOKED_STARCH_DOUGH);
+                            entries.add(ModItems.STARCH_DOUGH_WRAPPER);
+                            entries.add(ModItems.UNFORMED_QING_QIU_YU);
                             //自制食物
                             entries.add(ModItems.SALT);
+                            entries.add(ModItems.MEAT_FLOSS);
                             entries.add(ModItems.SALTED_EGG_YOLK);
                             entries.add(ModItems.FLOUR);
                             entries.add(ModItems.DOUGH);
@@ -41,6 +57,7 @@ public class ModItemGroups {
                             entries.add(ModItems.UNFORMED_ZANGJINBO);
                             entries.add(ModItems.ZANG_JIN_BO);
                             entries.add(ModItems.COOKED_ZANG_JIN_BO);
+                            entries.add(ModItems.QING_QIU_YU);
 
                             entries.add(ModItems.A_BAG_OF_SUGAR);
                             entries.add(ModItems.SUGAR_GROUP);

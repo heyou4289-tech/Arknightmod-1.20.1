@@ -13,5 +13,7 @@ public class ArknightModClient implements ClientModInitializer {
                 ModBlocks.ORIGINIUM_BLOCK,
                 RenderLayer.getTranslucent()
         );
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRAWBERRY_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLUTINOUS_RICE_CROP, RenderLayer.getCutout());
     }
 }

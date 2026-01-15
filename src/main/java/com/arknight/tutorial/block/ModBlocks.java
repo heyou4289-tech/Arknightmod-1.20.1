@@ -1,13 +1,17 @@
 package com.arknight.tutorial.block;
 
 import com.arknight.tutorial.ArknightMod;
+import com.arknight.tutorial.block.custom.GlutinousRiceCropBlock;
+import com.arknight.tutorial.block.custom.StrawberryCropBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -36,6 +40,21 @@ public class ModBlocks {
     public static final Block SALT_ORE = register("salt_ore", new Block(AbstractBlock.Settings.create()
             .requiresTool()
             .strength(1.5f, 1.5f)));
+
+    //作物
+    public static final Block STRAWBERRY_CROP = Registry.register(Registries.BLOCK, new Identifier(ArknightMod.MOD_ID, "strawberry_crop"),
+            new StrawberryCropBlock(AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly().pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block GLUTINOUS_RICE_CROP =
+            Registry.register(
+                    Registries.BLOCK,
+                    new Identifier(ArknightMod.MOD_ID, "glutinous_rice_crop"),
+                    new GlutinousRiceCropBlock(
+                            AbstractBlock.Settings.create()
+                                    .noCollision()
+                                    .ticksRandomly()
+                                    .breakInstantly()
+                                    .pistonBehavior(PistonBehavior.DESTROY)
+                    ));
 
 
 

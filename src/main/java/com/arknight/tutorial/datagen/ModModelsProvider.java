@@ -1,6 +1,8 @@
 package com.arknight.tutorial.datagen;
 
 import com.arknight.tutorial.block.ModBlocks;
+import com.arknight.tutorial.block.custom.GlutinousRiceCropBlock;
+import com.arknight.tutorial.block.custom.StrawberryCropBlock;
 import com.arknight.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -22,6 +24,10 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ICE_ETHER_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SALT_ORE);
+
+        //作物crop
+        blockStateModelGenerator.registerCrop(ModBlocks.STRAWBERRY_CROP, StrawberryCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerCrop(ModBlocks.GLUTINOUS_RICE_CROP, GlutinousRiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
     }
 
     @Override
@@ -45,7 +51,18 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SUGAR_CUBE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SALT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SALTED_EGG_YOLK, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.STARCH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STARCH_DOUGH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_STARCH_DOUGH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STARCH_DOUGH_WRAPPER, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.MEAT_FLOSS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNCOOKED_GLUTINOUS_RICE_DOUGH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_GLUTINOUS_RICE_DOUGH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GLUTINOUS_RICE_DOUGH_WRAPPER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORMED_LIANG_XIAO_QING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIANG_XIAO_QING, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MOONCAKE_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ROLLING_PIN, Models.GENERATED);
@@ -55,5 +72,11 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNFORMED_ZANGJINBO, Models.GENERATED);
         itemModelGenerator.register(ModItems.ZANG_JIN_BO, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_ZANG_JIN_BO, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.UNFORMED_QING_QIU_YU, Models.GENERATED);
+        itemModelGenerator.register(ModItems.QING_QIU_YU, Models.GENERATED);
+
+        //作物
+        //itemModelGenerator.register(ModItems.GLUTINOUS_RICE, Models.GENERATED);
     }
 }
