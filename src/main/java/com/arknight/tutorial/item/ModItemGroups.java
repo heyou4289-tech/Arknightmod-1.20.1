@@ -59,6 +59,9 @@ public class ModItemGroups {
                             entries.add(ModItems.COOKED_ZANG_JIN_BO);
                             entries.add(ModItems.QING_QIU_YU);
 
+                            entries.add(ModItems.CANNED_VEGETABLES_AND_RADISHES);
+                            entries.add(ModItems.KALE);
+
                             entries.add(ModItems.A_BAG_OF_SUGAR);
                             entries.add(ModItems.SUGAR_GROUP);
                             entries.add(ModItems.SUGAR_CUBE);
@@ -91,6 +94,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SALT_ORE);
                         entries.add(ModItems.MOONCAKE_MOLD);
                         entries.add(ModItems.ROLLING_PIN);
+                        entries.add(ModItems.EMPTY_CAN);
                         //entries.add(Items.DIAMOND);
                     }).build());
 

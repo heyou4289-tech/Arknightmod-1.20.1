@@ -229,6 +229,26 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion("has_mooncake_mold", conditionsFromItem(ModItems.MOONCAKE_MOLD))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.EMPTY_CAN, 1)
+                .pattern("# #")
+                .pattern("# #")
+                .pattern(" # ")
+                .input('#', Items.IRON_NUGGET)
+                .criterion("has_iron", conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+
+        //青菜萝卜罐头
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CANNED_VEGETABLES_AND_RADISHES, 1)
+                .pattern("#*#")
+                .pattern("#@#")
+                .pattern("*¥*")
+                .input('#', Ingredient.fromTag(ModItemTags.VEGETABLES))
+                .input('@', ModItems.SALT)
+                .input('*', Items.CARROT)
+                .input('¥', ModItems.EMPTY_CAN)
+                .criterion("has_empty_can", conditionsFromItem(ModItems.EMPTY_CAN))
+                .offerTo(exporter);
+
     }
 
 }

@@ -15,6 +15,12 @@ public class ModItemTags {
                     new Identifier("arknight-mod", "cooked_meat")
             );
 
+    public static final TagKey<Item> VEGETABLES =
+            TagKey.of(
+                    RegistryKeys.ITEM,
+                    new Identifier("arknight-mod", "vegetables")
+            );
+
     //public static final TagKey<Item> UNCOOKED_MOONCAKE = of("uncooked_mooncake");
 
     private static TagKey<Item> of(String id) {

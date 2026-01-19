@@ -62,9 +62,15 @@ public class ModItems {
     public static final Item COOKED_STARCH_DOUGH = registerItems("cooked_starch_dough", new Item(new Item.Settings()));
     public static final Item STARCH_DOUGH_WRAPPER = registerItems("starch_dough_wrapper", new Item(new Item.Settings()));
 
+    public static final Item CANNED_VEGETABLES_AND_RADISHES = registerItems("canned_vegetables_and_radishes", new Item(new Item.Settings().food(ModFoodComponents.CANNED_VEGETABLES_AND_RADISHES).recipeRemainder(ModItems.EMPTY_CAN)));
+
+    //蔬菜
+    public static final Item KALE = registerItems("kale", new Item(new Item.Settings().food(ModFoodComponents.KALE)));
+
     //作物
     public static final Item GLUTINOUS_RICE = registerItem("glutinous_rice", new AliasedBlockItem(ModBlocks.GLUTINOUS_RICE_CROP, new Item.Settings()));
     public static final Item STRAWBERRY_SEEDS = registerItems("strawberry_seeds", new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP, new Item.Settings()));
+    public static final Item KALE_SEEDS = registerItems("kale_seeds", new AliasedBlockItem(ModBlocks.KALE_CROP, new Item.Settings()));
 
     //调料
     public static final Item SALT = registerItem("salt", new Item(new Item.Settings()));
@@ -72,6 +78,8 @@ public class ModItems {
     //工具
     public static final Item MOONCAKE_MOLD = registerItem("mooncake_mold", new Item(new Item.Settings().maxCount(1)));
     public static final Item ROLLING_PIN = registerItem("rolling_pin", new Item(new Item.Settings()));
+
+    public static final Item EMPTY_CAN = Registry.register(Registries.ITEM, new Identifier(ArknightMod.MOD_ID, "empty_can"), new Item(new Item.Settings()));
 
     //燃料
     public static final Item ANTHRACITE = registerItems("anthracite", new Item(new Item.Settings()));

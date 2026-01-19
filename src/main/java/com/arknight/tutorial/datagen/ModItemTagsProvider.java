@@ -24,5 +24,9 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.COOKED_CHICKEN)
                 .add(Items.COOKED_MUTTON)
                 .add(Items.COOKED_RABBIT);
+
+        getOrCreateTagBuilder(ModItemTags.VEGETABLES)
+                .add(ModItems.KALE);
     }
+
 }

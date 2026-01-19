@@ -2,6 +2,7 @@ package com.arknight.tutorial.datagen;
 
 import com.arknight.tutorial.block.ModBlocks;
 import com.arknight.tutorial.block.custom.GlutinousRiceCropBlock;
+import com.arknight.tutorial.block.custom.KaleCropBlock;
 import com.arknight.tutorial.block.custom.StrawberryCropBlock;
 import com.arknight.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -50,11 +51,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                         ModItems.STRAWBERRY_SEEDS,
                         strawberryBuilder));
 
+
         LootCondition.Builder glutinousRiceBuilder =
                 BlockStatePropertyLootCondition.builder(ModBlocks.GLUTINOUS_RICE_CROP)
                         .properties(StatePredicate.Builder.create()
                                 .exactMatch(GlutinousRiceCropBlock.AGE, 7));
-
         addDrop(
                 ModBlocks.GLUTINOUS_RICE_CROP,
                 cropDrops(
@@ -62,6 +63,23 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                         ModItems.GLUTINOUS_RICE,
                         ModItems.GLUTINOUS_RICE,
                         glutinousRiceBuilder));
+
+
+        LootCondition.Builder kaleBuilder =
+                BlockStatePropertyLootCondition.builder(ModBlocks.KALE_CROP)
+                        .properties(
+                                StatePredicate.Builder.create()
+                                        .exactMatch(KaleCropBlock.AGE, 3)
+                        );
+        addDrop(
+                ModBlocks.KALE_CROP,
+                cropDrops(
+                        ModBlocks.KALE_CROP,
+                        ModItems.KALE_SEEDS,   // 成熟掉落
+                        ModItems.KALE_SEEDS,   // 未成熟掉落
+                        kaleBuilder
+                )
+        );
 
         //………………………………
 

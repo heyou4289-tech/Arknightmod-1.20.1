@@ -76,6 +76,11 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNFORMED_QING_QIU_YU, Models.GENERATED);
         itemModelGenerator.register(ModItems.QING_QIU_YU, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.EMPTY_CAN, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CANNED_VEGETABLES_AND_RADISHES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.KALE, Models.GENERATED);
+
         //作物
         //itemModelGenerator.register(ModItems.GLUTINOUS_RICE, Models.GENERATED);
     }

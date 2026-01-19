@@ -2,6 +2,7 @@ package com.arknight.tutorial.block;
 
 import com.arknight.tutorial.ArknightMod;
 import com.arknight.tutorial.block.custom.GlutinousRiceCropBlock;
+import com.arknight.tutorial.block.custom.KaleCropBlock;
 import com.arknight.tutorial.block.custom.StrawberryCropBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -55,6 +56,18 @@ public class ModBlocks {
                                     .breakInstantly()
                                     .pistonBehavior(PistonBehavior.DESTROY)
                     ));
+
+    public static final Block KALE_CROP = Registry.register(
+            Registries.BLOCK,
+            new Identifier(ArknightMod.MOD_ID, "kale_crop"),
+            new KaleCropBlock(
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .ticksRandomly()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.CROP)
+            )
+    );
 
 
 

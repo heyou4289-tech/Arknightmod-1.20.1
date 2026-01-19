@@ -67,6 +67,10 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.MOONCAKE_MOLD, "月饼磨具");
         translationBuilder.add(ModItems.ROLLING_PIN, "擀面杖");
 
+        translationBuilder.add(ModItems.EMPTY_CAN, "铁罐");
+        translationBuilder.add(ModItems.CANNED_VEGETABLES_AND_RADISHES, "青菜萝卜罐头");
+        translationBuilder.add(ModItems.KALE, "甘蓝菜");
+
         //调料
         translationBuilder.add(ModBlocks.SALT_ORE, "盐矿");
         translationBuilder.add(ModItems.SALT, "盐");

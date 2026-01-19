@@ -43,7 +43,7 @@ public class ModFoodComponents {
             .build();
     public static final FoodComponent QING_QIU_YU = new FoodComponent.Builder().hunger(6).saturationModifier(0.8f) //清秋玉
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 1000, 2), 1.0f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 2600, 5), 1.0f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 2600, 15), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 2, 3), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 3000, 5), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 2), 1.0f)
@@ -60,6 +60,14 @@ public class ModFoodComponents {
             .build();
 
     public static final FoodComponent MEAT_FLOSS = new FoodComponent.Builder().hunger(1).saturationModifier(0.2f).build();
+
+    public static final FoodComponent CANNED_VEGETABLES_AND_RADISHES = new FoodComponent.Builder().hunger(4).saturationModifier(0.4f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 200, 3), 1.0f)
+            .build();
+
+
+    //蔬菜
+    public static final FoodComponent KALE = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
 
 
 

@@ -58,6 +58,9 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.UNFORMED_LIANG_XIAO_QING, "unformed liang xiao qing");
         translationBuilder.add(ModItems.LIANG_XIAO_QING, "liang xiao qing");
 
+        translationBuilder.add(ModItems.CANNED_VEGETABLES_AND_RADISHES, "vegetables and radishes can");
+        translationBuilder.add(ModItems.KALE, "kale");
+
         //crop
         translationBuilder.add(ModItems.GLUTINOUS_RICE, "glutinous rice");
         translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "Strawberry seed");
@@ -68,7 +71,9 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
 
         //tool
         translationBuilder.add(ModItems.MOONCAKE_MOLD, "mooncake mold");
-        translationBuilder.add(ModItems.ROLLING_PIN, "rolling_pin");
+        translationBuilder.add(ModItems.ROLLING_PIN, "rolling pin");
+
+        translationBuilder.add(ModItems.EMPTY_CAN, "empty can");
 
         //seasoning
         translationBuilder.add(ModBlocks.SALT_ORE, "salt ore");
