@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "arknight-mod:vegetables"
+    },
+    "*": {
+      "item": "minecraft:carrot"
+    },
+    "@": {
+      "item": "arknight-mod:salt"
+    },
+    "¥": {
+      "item": "arknight-mod:empty_can"
+    }
+  },
+  "pattern": [
+    "#*#",
+    "#@#",
+    "*¥*"
+  ],
+  "result": {
+    "item": "arknight-mod:canned_vegetables_and_radishes"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:glutinous_rice"
+    },
+    {
+      "item": "arknight-mod:glutinous_rice"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "arknight-mod:uncooked_glutinous_rice_dough"
+  }
+}

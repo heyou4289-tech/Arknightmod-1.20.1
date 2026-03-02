@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "arknight-mod:item/a_bag_of_sugar"
+  }
+}

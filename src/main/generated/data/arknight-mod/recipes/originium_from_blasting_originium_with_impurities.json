@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 1.0,
+  "group": "originium_with_impurities_to_pure_originium",
+  "ingredient": {
+    "item": "arknight-mod:originium_with_impurities"
+  },
+  "result": "arknight-mod:originium"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:corn"
+    }
+  ],
+  "result": {
+    "count": 5,
+    "item": "arknight-mod:starch"
+  }
+}

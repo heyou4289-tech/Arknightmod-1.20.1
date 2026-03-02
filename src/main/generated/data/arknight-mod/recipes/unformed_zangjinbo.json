@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:salted_egg_yolk"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "arknight-mod:dough_wrapper"
+    }
+  ],
+  "result": {
+    "item": "arknight-mod:unformed_zangjinbo"
+  }
+}

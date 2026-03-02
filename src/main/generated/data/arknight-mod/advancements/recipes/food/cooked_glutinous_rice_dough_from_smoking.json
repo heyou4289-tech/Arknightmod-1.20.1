@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:cooked_glutinous_rice_dough_from_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uncooked_glutinous_rice_dough": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arknight-mod:uncooked_glutinous_rice_dough"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_uncooked_glutinous_rice_dough",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:cooked_glutinous_rice_dough_from_smoking"
+    ]
+  },
+  "sends_telemetry_event": false
+}

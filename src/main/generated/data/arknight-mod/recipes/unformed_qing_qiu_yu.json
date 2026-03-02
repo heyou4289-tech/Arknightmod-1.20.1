@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:starch_dough_wrapper"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "arknight-mod:meat_floss"
+    },
+    {
+      "item": "arknight-mod:meat_floss"
+    }
+  ],
+  "result": {
+    "item": "arknight-mod:unformed_qing_qiu_yu"
+  }
+}

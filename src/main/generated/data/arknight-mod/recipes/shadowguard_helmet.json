@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "*": {
+      "item": "minecraft:diamond_helmet"
+    }
+  },
+  "pattern": [
+    "###",
+    "#*#",
+    "###"
+  ],
+  "result": {
+    "item": "arknight-mod:shadowguard_helmet"
+  },
+  "show_notification": true
+}

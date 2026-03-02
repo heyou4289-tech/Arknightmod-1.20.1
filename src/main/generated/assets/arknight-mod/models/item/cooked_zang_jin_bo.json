@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "arknight-mod:item/cooked_zang_jin_bo"
+  }
+}

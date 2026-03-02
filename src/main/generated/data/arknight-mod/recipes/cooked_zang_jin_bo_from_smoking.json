@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.8,
+  "ingredient": {
+    "item": "arknight-mod:zang_jin_bo"
+  },
+  "result": "arknight-mod:cooked_zang_jin_bo"
+}

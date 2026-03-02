@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:unformed_liang_xiao_qing"
+    },
+    {
+      "item": "arknight-mod:mooncake_mold"
+    }
+  ],
+  "result": {
+    "item": "arknight-mod:liang_xiao_qing"
+  }
+}

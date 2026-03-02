@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "&": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "*": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "@": {
+      "item": "minecraft:nautilus_shell"
+    },
+    "N": {
+      "item": "minecraft:netherite_chestplate"
+    }
+  },
+  "pattern": [
+    "#N#",
+    "#*#",
+    "&@&"
+  ],
+  "result": {
+    "item": "arknight-mod:abyssal_hunters_chestplate"
+  },
+  "show_notification": true
+}

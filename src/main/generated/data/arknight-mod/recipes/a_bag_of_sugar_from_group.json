@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:sugar_group"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "arknight-mod:a_bag_of_sugar"
+  }
+}

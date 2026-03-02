@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "*": {
+      "item": "minecraft:diamond_boots"
+    }
+  },
+  "pattern": [
+    "###",
+    "#*#",
+    "###"
+  ],
+  "result": {
+    "item": "arknight-mod:shadowguard_boots"
+  },
+  "show_notification": true
+}

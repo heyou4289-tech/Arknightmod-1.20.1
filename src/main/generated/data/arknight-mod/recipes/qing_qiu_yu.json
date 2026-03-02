@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:unformed_qing_qiu_yu"
+    },
+    {
+      "item": "arknight-mod:mooncake_mold"
+    }
+  ],
+  "result": {
+    "item": "arknight-mod:qing_qiu_yu"
+  }
+}

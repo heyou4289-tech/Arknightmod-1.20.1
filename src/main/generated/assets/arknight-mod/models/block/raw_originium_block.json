@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "arknight-mod:block/raw_originium_block"
+  }
+}

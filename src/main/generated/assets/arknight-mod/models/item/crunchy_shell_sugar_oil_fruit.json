@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "arknight-mod:item/crunchy_shell_sugar_oil_fruit"
+  }
+}

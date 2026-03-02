@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:cooked_glutinous_rice_dough"
+    },
+    {
+      "item": "arknight-mod:rolling_pin"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "arknight-mod:glutinous_rice_dough_wrapper"
+  }
+}

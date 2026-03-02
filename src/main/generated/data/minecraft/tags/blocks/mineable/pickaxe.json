@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "arknight-mod:originium_block",
+    "arknight-mod:raw_originium_block",
+    "arknight-mod:deepslate_raw_originium_ore",
+    "arknight-mod:salt_ore"
+  ]
+}

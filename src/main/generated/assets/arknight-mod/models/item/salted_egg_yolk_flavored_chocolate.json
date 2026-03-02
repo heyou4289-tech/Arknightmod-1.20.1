@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "arknight-mod:item/salted_egg_yolk_flavored_chocolate"
+  }
+}

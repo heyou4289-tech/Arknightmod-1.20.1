@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "arknight-mod:raw_originium"
+    },
+    "*": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "*#*",
+    "###",
+    "*#*"
+  ],
+  "result": {
+    "item": "arknight-mod:orundum"
+  },
+  "show_notification": true
+}

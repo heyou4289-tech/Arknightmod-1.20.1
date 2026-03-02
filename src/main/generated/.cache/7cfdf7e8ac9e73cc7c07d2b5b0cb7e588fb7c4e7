@@ -1,0 +1,4 @@
+// 1.20.1	2026-02-28T17:57:29.563119	Arknight Mod/Tags for minecraft:block
+995c93c7e5df81a7053a95940f24393114cf3656 data/minecraft/tags/blocks/mineable/pickaxe.json
+3c71517034f002ebc95491ad0a12d2387521196d data/minecraft/tags/blocks/needs_iron_tool.json
+500cbcb1b7d489838f52e42f645856a0328a575a data/arknight-mod/tags/blocks/originium_ores.json

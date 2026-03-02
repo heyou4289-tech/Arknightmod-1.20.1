@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "$": {
+      "item": "minecraft:sculk"
+    },
+    "*": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "N": {
+      "item": "minecraft:netherite_helmet"
+    }
+  },
+  "pattern": [
+    "#*#",
+    "#N#",
+    " $ "
+  ],
+  "result": {
+    "item": "arknight-mod:abyssal_hunters_helmet"
+  },
+  "show_notification": true
+}

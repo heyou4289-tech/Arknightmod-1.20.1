@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:paper"
+    },
+    "*": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "###",
+    "***",
+    "###"
+  ],
+  "result": {
+    "count": 3,
+    "item": "arknight-mod:material/cardboard"
+  },
+  "show_notification": true
+}

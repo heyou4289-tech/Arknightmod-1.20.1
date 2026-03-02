@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:glutinous_rice_dough_wrapper"
+    },
+    {
+      "item": "arknight-mod:meat_floss"
+    },
+    {
+      "item": "arknight-mod:meat_floss"
+    }
+  ],
+  "result": {
+    "item": "arknight-mod:unformed_liang_xiao_qing"
+  }
+}

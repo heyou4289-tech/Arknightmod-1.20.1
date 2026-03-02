@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:salt"
+    },
+    {
+      "tag": "arknight-mod:cooked_meat"
+    }
+  ],
+  "result": {
+    "count": 5,
+    "item": "arknight-mod:meat_floss"
+  }
+}

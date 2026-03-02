@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:rolling_pin"
+    },
+    {
+      "item": "arknight-mod:dough"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "arknight-mod:dough_wrapper"
+  }
+}

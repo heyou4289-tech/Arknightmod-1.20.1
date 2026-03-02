@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arknight-mod:originium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "arknight-mod:originium"
+  }
+}

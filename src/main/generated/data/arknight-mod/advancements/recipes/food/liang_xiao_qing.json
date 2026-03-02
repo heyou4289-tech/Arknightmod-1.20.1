@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mooncake_mold": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arknight-mod:mooncake_mold"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arknight-mod:liang_xiao_qing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_mooncake_mold",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arknight-mod:liang_xiao_qing"
+    ]
+  },
+  "sends_telemetry_event": false
+}

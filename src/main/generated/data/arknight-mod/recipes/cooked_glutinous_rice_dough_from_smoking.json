@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "ingredient": {
+    "item": "arknight-mod:uncooked_glutinous_rice_dough"
+  },
+  "result": "arknight-mod:cooked_glutinous_rice_dough"
+}

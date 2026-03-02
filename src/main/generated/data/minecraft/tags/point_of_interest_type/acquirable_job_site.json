@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "arknight-mod:originium_block_poi",
+      "required": false
+    }
+  ]
+}
