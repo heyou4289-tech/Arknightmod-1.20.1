@@ -47,6 +47,8 @@ public class ModItemGroups {
                             entries.add(ModItems.COOKED_STARCH_DOUGH);
                             entries.add(ModItems.STARCH_DOUGH_WRAPPER);
                             entries.add(ModItems.UNFORMED_QING_QIU_YU);
+                            entries.add(ModItems.QING_QIU_YU);
+
                             //自制食物
                             entries.add(ModItems.SALT);
                             entries.add(ModItems.MEAT_FLOSS);
@@ -57,14 +59,27 @@ public class ModItemGroups {
                             entries.add(ModItems.UNFORMED_ZANGJINBO);
                             entries.add(ModItems.ZANG_JIN_BO);
                             entries.add(ModItems.COOKED_ZANG_JIN_BO);
-                            entries.add(ModItems.QING_QIU_YU);
 
                             entries.add(ModItems.CANNED_VEGETABLES_AND_RADISHES);
                             entries.add(ModItems.KALE);
 
+                            entries.add(ModItems.REFRESHING_SPORTS_DRINK);
+
                             entries.add(ModItems.A_BAG_OF_SUGAR);
                             entries.add(ModItems.SUGAR_GROUP);
                             entries.add(ModItems.SUGAR_CUBE);
+
+                            entries.add(ModItems.HUA_GUI_PO);
+                            entries.add(ModItems.GUANG_HAN_LE);
+
+                            entries.add(ModItems.CRUNCHY_SHELL_SUGAR_OIL_FRUIT);
+
+                            entries.add(ModItems.EMERGENCY_RATIONAL_COMPOUND);
+                            entries.add(ModItems.EMERGENCY_RATIONAL_CONCENTRATE);
+                            entries.add(ModItems.ROASTED_ALMOND_CHOCOLATE);
+                            entries.add(ModItems.SALTED_EGG_YOLK_FLAVORED_CHOCOLATE);
+                            entries.add(ModItems.EDIBLE_CUBE);
+                            entries.add(ModItems.FURNACE_FRIED_RICE_FROM_WISH_A_DALE);
 
                         })).build());
     }
@@ -78,11 +93,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) ->{
                         entries.add(ModItems.ANTHRACITE);
                         entries.add(ModItems.CARDBOARD);
-                        entries.add(ModBlocks.ICE_ETHER_ORE);
-                        entries.add(ModItems.ICE_ETHER);
-                        entries.add(ModBlocks.ICE_ETHER_BLOCK);
-                        entries.add(ModItems.RAW_ICE_ETHER);
-                        entries.add(ModBlocks.RAW_ICE_ETHER_BLOCK);
+                        entries.add(ModItems.ORIGINIUM_WITH_IMPURITIES);
                         entries.add(ModItems.ORIGINIUM);
                         entries.add(ModBlocks.ORIGINIUM_BLOCK);
                         entries.add(ModItems.RAW_ORIGINIUM);
@@ -95,6 +106,17 @@ public class ModItemGroups {
                         entries.add(ModItems.MOONCAKE_MOLD);
                         entries.add(ModItems.ROLLING_PIN);
                         entries.add(ModItems.EMPTY_CAN);
+
+                        //装备
+                        entries.add(ModItems.ABYSSAL_HUNTERS_HELMET);
+                        entries.add(ModItems.ABYSSAL_HUNTERS_CHESTPLATE);
+                        entries.add(ModItems.ABYSSAL_HUNTERS_LEGGINGS);
+                        entries.add(ModItems.ABYSSAL_HUNTERS_BOOTS);
+                        entries.add(ModItems.SHADOWGUARD_HELMET);
+                        entries.add(ModItems.SHADOWGUARD_CHESTPLATE);
+                        entries.add(ModItems.SHADOWGUARD_LEGGINGS);
+                        entries.add(ModItems.SHADOWGUARD_BOOTS);
+
                         //entries.add(Items.DIAMOND);
                     }).build());
 

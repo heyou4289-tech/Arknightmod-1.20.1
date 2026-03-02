@@ -28,8 +28,8 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         super(output);
     }
 
-    public static final List<ItemConvertible> ICE_ETHER = List.of(ModItems.RAW_ICE_ETHER, ModBlocks.ICE_ETHER_ORE);
     //public static final List<ItemConvertible> UNCOOKED_MOONCAKE = List.of(ModItems.ZANG_JIN_BO);
+    public static final List<ItemConvertible> ORIGINIUM_WITH_IMPURITIES = List.of(ModItems.ORIGINIUM_WITH_IMPURITIES);
 
     //public static List<ItemConvertible>   //烧炼
     @Override
@@ -44,8 +44,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
 
         //offerSmelting(exporter, xxx, RecipeCategory.MISC, ModItems.xxx, 0.7f, 200, "xxxx");//熔炉烧炼
         //offerBlasting(exporter, xxx, RecipeCategory.MISC, ModItems.xxx, 0.7f, 100, "xxxx");//高炉烧炼
-        offerSmelting(exporter, ICE_ETHER, RecipeCategory.MISC, ModItems.ICE_ETHER, 0.7f, 200, "ice_ether");
-        offerBlasting(exporter, ICE_ETHER, RecipeCategory.MISC, ModItems.ICE_ETHER, 0.7f, 100, "ice_ether");
+        offerBlasting(exporter, ORIGINIUM_WITH_IMPURITIES, RecipeCategory.MISC, ModItems.ORIGINIUM, 1.0f, 250, "originium_with_impurities_to_pure_originium");//高炉烧炼
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ORUNDUM, 1)
@@ -54,6 +53,14 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("*#*")
                 .input('#', ModItems.RAW_ORIGINIUM)
                 .input('*', Items.IRON_INGOT)
+                .criterion("has_raw_originium", conditionsFromItem(ModItems.RAW_ORIGINIUM))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ORIGINIUM_WITH_IMPURITIES, 1)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.RAW_ORIGINIUM)
                 .criterion("has_raw_originium", conditionsFromItem(ModItems.RAW_ORIGINIUM))
                 .offerTo(exporter);
 
@@ -247,6 +254,90 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .input('*', Items.CARROT)
                 .input('¥', ModItems.EMPTY_CAN)
                 .criterion("has_empty_can", conditionsFromItem(ModItems.EMPTY_CAN))
+                .offerTo(exporter);
+
+        //盔甲
+            //深海猎人套
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ABYSSAL_HUNTERS_HELMET, 1)
+                .pattern("#*#")
+                .pattern("#N#")
+                .pattern(" $ ")
+                .input('#', Items.PRISMARINE_SHARD)
+                .input('*', Items.HEART_OF_THE_SEA)
+                .input('$', Items.SCULK)
+                .input('N', Items.NETHERITE_HELMET)
+                .criterion("has_prismarine_shard", conditionsFromItem(Items.PRISMARINE_SHARD))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ABYSSAL_HUNTERS_CHESTPLATE, 1)
+                .pattern("#N#")
+                .pattern("#*#")
+                .pattern("&@&")
+                .input('#', Items.PRISMARINE_SHARD)
+                .input('*', Items.HEART_OF_THE_SEA)
+                .input('&', Items.NETHERITE_INGOT)
+                .input('@', Items.NAUTILUS_SHELL)
+                .input('N', Items.NETHERITE_CHESTPLATE)
+                .criterion("has_prismarine_shard", conditionsFromItem(Items.PRISMARINE_SHARD))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ABYSSAL_HUNTERS_LEGGINGS, 1)
+                .pattern("#&#")
+                .pattern("@N@")
+                .pattern("* *")
+                .input('#', Items.PRISMARINE_SHARD)
+                .input('*', Items.NETHERITE_INGOT)
+                .input('&', Items.HEART_OF_THE_SEA)
+                .input('@', Items.SCULK)
+                .input('N', Items.NETHERITE_LEGGINGS)
+                .criterion("has_prismarine_shard", conditionsFromItem(Items.PRISMARINE_SHARD))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ABYSSAL_HUNTERS_BOOTS, 1)
+                .pattern("* *")
+                .pattern("@ @")
+                .pattern(" N ")
+                .input('*', Items.HEART_OF_THE_SEA)
+                .input('@', Items.NETHERITE_INGOT)
+                .input('N', Items.NETHERITE_BOOTS)
+                .criterion("has_prismarine_shard", conditionsFromItem(Items.PRISMARINE_SHARD))
+                .offerTo(exporter);
+
+            //影卫套
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SHADOWGUARD_HELMET, 1)
+                .pattern("###")
+                .pattern("#*#")
+                .pattern("###")
+                .input('#', Items.BAMBOO)
+                .input('*', Items.DIAMOND_HELMET)
+                .criterion("has_bamboo", conditionsFromItem(Items.BAMBOO))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SHADOWGUARD_CHESTPLATE, 1)
+                .pattern("###")
+                .pattern("#*#")
+                .pattern("###")
+                .input('#', Items.BAMBOO)
+                .input('*', Items.DIAMOND_CHESTPLATE)
+                .criterion("has_bamboo", conditionsFromItem(Items.BAMBOO))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SHADOWGUARD_LEGGINGS, 1)
+                .pattern("###")
+                .pattern("#*#")
+                .pattern("###")
+                .input('#', Items.BAMBOO)
+                .input('*', Items.DIAMOND_LEGGINGS)
+                .criterion("has_bamboo", conditionsFromItem(Items.BAMBOO))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SHADOWGUARD_BOOTS, 1)
+                .pattern("###")
+                .pattern("#*#")
+                .pattern("###")
+                .input('#', Items.BAMBOO)
+                .input('*', Items.DIAMOND_BOOTS)
+                .criterion("has_bamboo", conditionsFromItem(Items.BAMBOO))
                 .offerTo(exporter);
 
     }

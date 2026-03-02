@@ -16,6 +16,7 @@ public class ArknightModDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModModelsProvider::new);
         pack.addProvider(ModRecipesProvider::new);
         pack.addProvider(ModZhCnLangProvider::new);
+        pack.addProvider(ModPointTagProvider::new);
 
 	}
 }

@@ -1,6 +1,7 @@
 package com.arknight.tutorial;
 
 import com.arknight.tutorial.block.ModBlocks;
+import com.arknight.tutorial.villager.ModPointOfInterestTypes;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -12,8 +13,11 @@ public class ArknightModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(
                 ModBlocks.ORIGINIUM_BLOCK,
                 RenderLayer.getTranslucent()
+
+
         );
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRAWBERRY_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLUTINOUS_RICE_CROP, RenderLayer.getCutout());
+
     }
 }

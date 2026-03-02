@@ -3,11 +3,15 @@ package com.arknight.tutorial;
 import com.arknight.tutorial.block.ModBlocks;
 import com.arknight.tutorial.item.ModItemGroups;
 import com.arknight.tutorial.item.ModItems;
+import com.arknight.tutorial.villager.ModPointOfInterestTypes;
+import com.arknight.tutorial.villager.ModTraders;
+import com.arknight.tutorial.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 public class ArknightMod implements ModInitializer {
 	public static final String MOD_ID = "arknight-mod";
@@ -25,6 +29,12 @@ public class ArknightMod implements ModInitializer {
         ModItems.registerItems();
         ModBlocks.registerModBlocks();
         ModItemGroups.registerGroups();
+
+        ModTraders.registerTraders();
+        ModVillagers.registerModVillagers();
+        FriedRiceExplosionManager.init();
+        //ModPointOfInterestTypes.ORIGINIUM_BLOCK_POI.toString();
+
 
         //FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE, 1600);
 		LOGGER.info("Hello Fabric world!");

@@ -30,13 +30,6 @@ public class ModBlocks {
                                                                     .strength(4.5f,3.0f)
                                                                     .requiresTool()
                                                                     .luminance(state -> 4)));
-    public static final Block ICE_ETHER_BLOCK = register( "ice_ether_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
-    public static final Block RAW_ICE_ETHER_BLOCK = register("raw_ice_ether_block", new Block(AbstractBlock.Settings.create()
-                                                            .strength(0.2f, 0.2f)
-                                                            .requiresTool()));
-    public static final Block ICE_ETHER_ORE = register("ice_ether_ore", new Block(AbstractBlock.Settings.create()
-                                                        .strength(3.0f, 3.0f)
-                                                        .requiresTool()));
 
     public static final Block SALT_ORE = register("salt_ore", new Block(AbstractBlock.Settings.create()
             .requiresTool()

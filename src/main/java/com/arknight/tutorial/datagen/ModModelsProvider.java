@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -20,9 +21,6 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ORIGINIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_RAW_ORIGINIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORIGINIUM_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ICE_ETHER_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SALT_ORE);
 
         //作物crop
@@ -32,10 +30,9 @@ public class ModModelsProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.ICE_ETHER, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RAW_ICE_ETHER, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.RAW_ORIGINIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORIGINIUM_WITH_IMPURITIES, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORIGINIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.LUNGMEN_DOLLAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORIGINIUM_ORE, Models.GENERATED);
@@ -75,11 +72,36 @@ public class ModModelsProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.UNFORMED_QING_QIU_YU, Models.GENERATED);
         itemModelGenerator.register(ModItems.QING_QIU_YU, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GUANG_HAN_LE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.EMPTY_CAN, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CANNED_VEGETABLES_AND_RADISHES, Models.GENERATED);
         itemModelGenerator.register(ModItems.KALE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.HUA_GUI_PO, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.REFRESHING_SPORTS_DRINK, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CRUNCHY_SHELL_SUGAR_OIL_FRUIT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMERGENCY_RATIONAL_COMPOUND, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMERGENCY_RATIONAL_CONCENTRATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ROASTED_ALMOND_CHOCOLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SALTED_EGG_YOLK_FLAVORED_CHOCOLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EDIBLE_CUBE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FURNACE_FRIED_RICE_FROM_WISH_A_DALE, Models.GENERATED);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ABYSSAL_HUNTERS_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ABYSSAL_HUNTERS_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ABYSSAL_HUNTERS_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ABYSSAL_HUNTERS_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SHADOWGUARD_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SHADOWGUARD_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SHADOWGUARD_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SHADOWGUARD_BOOTS);
+
+
+
 
         //作物
         //itemModelGenerator.register(ModItems.GLUTINOUS_RICE, Models.GENERATED);
